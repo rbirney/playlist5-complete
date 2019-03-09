@@ -9,7 +9,7 @@ index(request, response) {
     logger.info('about rendering');
     if (loggedInUser) {
     const viewData = {
-      title: 'About Playlist 1',
+      title: 'About Playlist 5',
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
     response.render('about', viewData);

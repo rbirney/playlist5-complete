@@ -9,7 +9,8 @@ index(request, response) {
     logger.info('start rendering');
     if (loggedInUser) {
     const viewData = {
-      title: 'Welcome to Playlist 5' + loggedInUser.lastName,
+      title: 'Welcome to Playlist 5',
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
     response.render('start', viewData);
     }
